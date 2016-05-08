@@ -14,6 +14,7 @@ using Comicshdo.Services;
 
 namespace Comicshdo
 {
+    //Cho nit'
     //ghghghhgtyththththt
     public class Startup
     {

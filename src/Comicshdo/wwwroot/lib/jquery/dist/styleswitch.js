@@ -24,6 +24,7 @@
 			if (this.getAttribute('title') == styleName) this.disabled = false;
 		});
 		createCookie('style', styleName, 365);
+		alert();
 	}
 })(jQuery);
 // cookie functions http://www.quirksmode.org/js/cookies.html

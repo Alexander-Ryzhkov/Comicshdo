@@ -5,8 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>@ViewData["Title"] - Comicshdo</title>
 
+        <script type="text/javascript" src="styleswitch/jquery.min.js"></script>
+        <script type="text/javascript" src="styleswitch/styleswitch.js"></script>
+
         <environment names="Development">
-            <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+            <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrapDark.css" />
             <link rel="stylesheet" href="~/css/site.css" />
         </environment>
         <environment names="Staging,Production">
@@ -35,7 +38,11 @@
                         <li><a asp-controller="Home" asp-action="Index">HDO</a></li>
                         <li><a asp-controller="Home" asp-action="About">Abo</a></li>
                         <li><a asp-controller="Home" asp-action="Contact">Contact</a></li>
+                       
                     </ul>
+
+                    <li><a href="serversideSwitch.html-style=~/lib/bootstrap/dist/css/bootstrapDark.css" rel="styles2" class="styleswitch">кнопка 1</a></li>
+                    <li><a href="serversideSwitch.html-style=~/lib/bootstrap/dist/css/bootstrapLight.css" rel="styles1" class="styleswitch">кнопка 2</a></li>
                     @await Html.PartialAsync("_LoginPartial")
                 </div>
             </div>
